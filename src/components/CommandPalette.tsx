@@ -101,6 +101,7 @@ export default function CommandPalette() {
       >
         <button
           onClick={() => setIsOpen(true)}
+          suppressHydrationWarning
           className="flex items-center gap-2 px-3 py-2 rounded-xl glass text-xs text-white/30 hover:text-white/50 transition-colors"
         >
           <Command size={12} />
@@ -138,6 +139,7 @@ export default function CommandPalette() {
                   placeholder="Search commands..."
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
+                  suppressHydrationWarning
                   className="flex-1 bg-transparent text-sm text-white/80 outline-none placeholder:text-white/20"
                   autoFocus
                 />
@@ -157,6 +159,7 @@ export default function CommandPalette() {
                     <button
                       key={i}
                       onClick={() => handleCommand(command)}
+                      suppressHydrationWarning
                       className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left hover:bg-white/[0.04] transition-colors group"
                     >
                       <command.icon size={14} className="text-white/25" />
