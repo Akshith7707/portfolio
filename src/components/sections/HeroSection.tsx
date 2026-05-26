@@ -224,13 +224,13 @@ export default function HeroSection() {
           </button>
 
           <a
-            href={PERSONAL.social.github}
+            href="/Akshith_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group px-6 py-3 rounded-xl font-medium text-sm border border-white/10 hover:border-white/20 text-white/70 hover:text-white transition-all duration-300 flex items-center gap-2"
           >
             <FileText size={16} />
-            GitHub Resume Projects
+            View Resume
           </a>
         </motion.div>
 
