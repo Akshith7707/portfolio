@@ -8,6 +8,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import CertificationsSection from "@/components/sections/CertificationsSection";
@@ -41,6 +42,14 @@ export default function Home() {
           </div>
 
           <AboutSection />
+
+          <div className="section-padding">
+            <div className="section-container">
+              <div className="h-[1px] bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+            </div>
+          </div>
+
+          <ExperienceSection />
 
           <div className="section-padding">
             <div className="section-container">

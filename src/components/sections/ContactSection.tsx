@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Section from "@/components/Section";
 import { useInView } from "@/hooks/useAnimations";
 import { PERSONAL } from "@/lib/constants";
-import { Send, Linkedin, Github, Twitter, Mail, CheckCircle } from "lucide-react";
+import { Send, Linkedin, Github, Twitter, Mail, Phone, CheckCircle } from "lucide-react";
 
 export default function ContactSection() {
   const { ref, isInView } = useInView();
@@ -53,6 +53,12 @@ export default function ContactSection() {
       label: "Email",
       href: PERSONAL.social.email,
       color: "hover:text-purple-400",
+    },
+    {
+      icon: Phone,
+      label: PERSONAL.phone,
+      href: `tel:${PERSONAL.phone.replace(/\s+/g, "")}`,
+      color: "hover:text-emerald-400",
     },
   ];
 

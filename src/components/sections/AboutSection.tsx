@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Section from "@/components/Section";
 import { useInView } from "@/hooks/useAnimations";
 import { staggerContainer, staggerItem } from "@/lib/animations";
+import { ACHIEVEMENTS } from "@/lib/constants";
 import { Code2, Brain, Layers, Lightbulb } from "lucide-react";
 
 const highlights = [
@@ -64,8 +65,8 @@ export default function AboutSection() {
           {/* Stats */}
           <div className="flex gap-8 pt-4">
             {[
-              { value: "8.66", label: "CGPA" },
-              { value: "3+", label: "Projects" },
+              { value: "8.65", label: "CGPA" },
+              { value: "7+", label: "Projects" },
               { value: "6+", label: "Languages" },
             ].map((stat) => (
               <div key={stat.label}>
@@ -75,6 +76,20 @@ export default function AboutSection() {
                 <div className="text-xs text-white/30 font-medium mt-1">{stat.label}</div>
               </div>
             ))}
+          </div>
+
+          <div className="pt-2">
+            <p className="text-xs text-white/25 mb-3 font-medium uppercase tracking-wider">
+              Highlights
+            </p>
+            <div className="space-y-2">
+              {ACHIEVEMENTS.map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <span className="text-cyan-400/70 text-sm mt-0.5">•</span>
+                  <p className="text-sm text-white/45 leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </motion.div>
 

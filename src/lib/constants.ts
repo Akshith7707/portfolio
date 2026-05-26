@@ -1,27 +1,31 @@
 export const PERSONAL = {
   name: "Akshith Reddy Ponna",
   firstName: "Akshith",
-  title: "Software Engineer | AI Builder | System Design Enthusiast",
-  location: "Hyderabad, India",
-  email: "akshithreddy.ponna@gmail.com",
+  title: "Full-Stack Developer | AI Product Builder | System Design Enthusiast",
+  location: "Hyderabad, Telangana, India",
+  email: "akshith7707@gmail.com",
+  phone: "+91 9951199765",
   domain: "itsakshith.dev",
+  summary:
+    "Full-stack developer focused on AI-enabled products, scalable web platforms, and automation workflows.",
   education: {
     degree: "B.E Computer Science & Information Technology",
     college: "MVSR Engineering College",
-    cgpa: "8.66",
+    cgpa: "8.65",
   },
   social: {
-    linkedin: "https://www.linkedin.com/in/akshith-reddy-2675ab202/",
+    linkedin: "https://linkedin.com/in/akshith-reddy",
     twitter: "https://x.com/AkshithReddy07",
     leetcode: "https://leetcode.com/u/user3868OK/",
-    github: "https://github.com/akshithreddy",
-    email: "mailto:akshithreddy.ponna@gmail.com",
+    github: "https://github.com/Akshith7707",
+    email: "mailto:akshith7707@gmail.com",
   },
 };
 
 export const NAV_ITEMS = [
   { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Certifications", href: "#certifications" },
@@ -39,20 +43,28 @@ export const SKILLS = {
     { name: "TypeScript", icon: "🔷" },
   ],
   frontend: [
+    { name: "HTML", icon: "🧱" },
+    { name: "CSS", icon: "🎯" },
     { name: "React", icon: "⚛️" },
     { name: "Next.js", icon: "▲" },
     { name: "Tailwind CSS", icon: "🎨" },
   ],
   backend: [
     { name: "Node.js", icon: "🟢" },
+    { name: "Express.js", icon: "🚏" },
+    { name: "FastAPI", icon: "⚡" },
     { name: "REST APIs", icon: "🔗" },
+    { name: "JWT Auth", icon: "🔐" },
   ],
   databases: [
     { name: "MySQL", icon: "🐬" },
     { name: "PostgreSQL", icon: "🐘" },
     { name: "MongoDB", icon: "🍃" },
+    { name: "Supabase", icon: "🟩" },
+    { name: "ChromaDB", icon: "🧠" },
   ],
   aiml: [
+    { name: "OpenAI", icon: "✨" },
     { name: "NumPy", icon: "🔢" },
     { name: "Pandas", icon: "🐼" },
     { name: "Jupyter", icon: "📓" },
@@ -61,14 +73,133 @@ export const SKILLS = {
   tools: [
     { name: "Git", icon: "📦" },
     { name: "GitHub", icon: "🐙" },
-    { name: "Docker", icon: "🐳" },
     { name: "Postman", icon: "📮" },
     { name: "VS Code", icon: "💻" },
-    { name: "VMware", icon: "🖥️" },
+    { name: "Expo", icon: "📱" },
   ],
 };
 
 export const PROJECTS = [
+  {
+    id: "skillsync-ai",
+    title: "SkillSync AI",
+    tagline: "AI-powered job matching and ATS optimization",
+    description:
+      "Developed AI-driven hiring platform with resume parsing, GitHub profile analysis, LLM-powered skill extraction, cover letter generation, and ATS feedback flows.",
+    features: [
+      "Resume parsing and GitHub profile intelligence",
+      "LLM-based skill extraction and matching",
+      "Automated cover letter generation",
+      "ATS feedback and profile improvement loop",
+      "Recruiter-candidate pipeline workflows",
+    ],
+    techStack: ["Next.js", "Express.js", "PostgreSQL", "JWT", "OpenAI API"],
+    architecture: {
+      frontend: "Next.js app with role-aware candidate and recruiter views",
+      backend: "Express.js REST APIs with JWT-protected routes",
+      aiLayer: "LLM pipelines for extraction, scoring, and content generation",
+      database: "PostgreSQL relational schema for candidates, jobs, and matches",
+      analytics: "Matching confidence and profile quality metrics",
+      personalization: "Skill-gap recommendations from ATS feedback",
+    },
+    challenges: [
+      "Balanced extraction accuracy with latency in real-time workflows",
+      "Designed secure auth model across multi-role hiring journeys",
+      "Built scalable matching APIs for growing recruiter queries",
+    ],
+    color: "blue",
+    gradient: "from-blue-500/20 to-purple-500/20",
+  },
+  {
+    id: "talentflow-ai",
+    title: "TalentFlow AI",
+    tagline: "Interview automation with recruiter analytics",
+    description:
+      "Built AI recruitment platform for automated voice interviews, resume screening, candidate scoring, and analytics dashboards to accelerate shortlisting.",
+    features: [
+      "Automated voice interview workflows",
+      "Resume screening and candidate ranking",
+      "LLM-driven evaluation with structured feedback",
+      "Recruiter analytics dashboards",
+      "End-to-end shortlisting acceleration",
+    ],
+    techStack: ["React", "FastAPI", "MongoDB", "OpenAI"],
+    architecture: {
+      frontend: "React dashboard for recruiters and process monitoring",
+      backend: "FastAPI services for interview orchestration and scoring",
+      aiLayer: "OpenAI evaluation flows with rubric-based reasoning",
+      database: "MongoDB for flexible candidate and interview records",
+      analytics: "Scorecards and funnel performance dashboards",
+      personalization: "Role-specific interview and evaluation templates",
+    },
+    challenges: [
+      "Engineered reliable scoring consistency across varied responses",
+      "Designed clear recruiter-facing analytics from unstructured interviews",
+      "Reduced manual screening effort without losing decision quality",
+    ],
+    color: "purple",
+    gradient: "from-purple-500/20 to-cyan-500/20",
+  },
+  {
+    id: "schedulai",
+    title: "SchedulAI",
+    tagline: "WhatsApp AI appointment booking assistant",
+    description:
+      "Developed WhatsApp-based assistant for appointment booking, reminders, and admin-side availability management to reduce manual scheduling operations.",
+    features: [
+      "Conversational booking on WhatsApp",
+      "Automated reminders and scheduling updates",
+      "Admin panel for availability controls",
+      "Notification workflows and analytics",
+      "Reliable slot conflict prevention",
+    ],
+    techStack: ["Node.js", "PostgreSQL", "OpenAI", "REST APIs"],
+    architecture: {
+      frontend: "Admin interface for slots, bookings, and reports",
+      backend: "Node.js scheduler service with booking APIs",
+      aiLayer: "OpenAI intent parsing for booking and rescheduling",
+      database: "PostgreSQL booking calendar and transaction-safe updates",
+      analytics: "Booking volume and reminder performance tracking",
+      personalization: "Business rule-based availability policies",
+    },
+    challenges: [
+      "Handled scheduling conflicts across concurrent booking requests",
+      "Built reliable reminder flows with minimal missed appointments",
+      "Kept natural conversation UX while preserving strict booking logic",
+    ],
+    color: "cyan",
+    gradient: "from-cyan-500/20 to-blue-500/20",
+  },
+  {
+    id: "leadgen-scraper",
+    title: "LeadGen Scraper",
+    tagline: "Business lead extraction and dataset generation",
+    description:
+      "Built Google Maps scraping pipeline to extract contacts, ratings, and location intelligence with export-ready structured datasets for outreach and research teams.",
+    features: [
+      "Automated Google Maps data extraction",
+      "Structured lead datasets with quality fields",
+      "Contact, rating, and location enrichment",
+      "Export-ready outputs for outreach teams",
+      "Repeatable scraping workflows for market research",
+    ],
+    techStack: ["Python", "Web Automation", "Pandas", "CSV Pipelines"],
+    architecture: {
+      frontend: "Config-driven CLI and scripted execution flow",
+      backend: "Python scraping and transformation modules",
+      aiLayer: "Pattern cleanup and dedupe heuristics",
+      database: "File-based structured datasets for analytics pipelines",
+      analytics: "Lead quality checks and extraction success metrics",
+      personalization: "Region/category-specific scraping parameters",
+    },
+    challenges: [
+      "Maintained extraction quality across changing source layouts",
+      "Optimized runs for stable throughput on large lead sets",
+      "Designed reusable pipeline for multiple verticals and regions",
+    ],
+    color: "blue",
+    gradient: "from-blue-500/20 to-cyan-500/20",
+  },
   {
     id: "ai-skill-training",
     title: "AI-Powered Remote Skill Training",
@@ -185,6 +316,27 @@ export const CERTIFICATIONS = [
   },
 ];
 
+export const EXPERIENCE = [
+  {
+    title: "Full-Stack E-Commerce Platform",
+    role: "Freelance Developer",
+    duration: "Apr 2026 - Present",
+    location: "Remote",
+    points: [
+      "Building production-grade Indian e-commerce platform for sarees, dresses, and gold jewellery.",
+      "Designed customer storefront, web admin dashboard, and mobile app for admins and employees.",
+      "Implemented role-based access control for admin, employee, and customer workflows.",
+      "Built secure order processing with server-side validation and Supabase-backed REST APIs.",
+    ],
+  },
+];
+
+export const ACHIEVEMENTS = [
+  "Participated in hackathons and collaborative software development projects.",
+  "Contributed to ASTRA Tech Club through technical events, coding competitions, and workshops.",
+  "Organized DevLoop web development bootcamp covering HTML, CSS, Flask, SQL, and PythonAnywhere deployment.",
+];
+
 export const CURRENT_FOCUS = [
   {
     title: "Data Structures & Algorithms",
@@ -230,7 +382,7 @@ export const FLOATING_BADGES = [
   "AI/ML",
   "System Design",
   "Next.js",
-  "Docker",
+  "FastAPI",
   "MongoDB",
   "TypeScript",
 ];
